@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Product List</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/new.css" />
+</head>
+
+<body style="position: relative">
+
+    <aside class="main-sidebar" style="background-color: #17a2b8;">
+        <section class="sidebar" >
+            <div class="user-panel" >
+                <div class="user-info">
+                    <img
+                      src="images\team\2.png"
+                      alt="User Photo"
+                      id="userName"
+                      class="user-photo"
+                    />
+                    <span class="user-name" id="userName" style="background-color: rgb(255, 255, 255);">Thanu</span>
+                  </div>
+            </div>
+            <ul class="sidebar-menu" data-widget="tree" style="
+            height: 25px;
+            width: 210px; 
+        ">
+              <li class="header" style="background-color: #17a2b8; text-decoration: underline; color: blue; font-weight: bold; font-size: 24px;">Lanka PC</li>
+                <li><a href=><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                <li><a href=><i class="fa fa-money"></i> <span>Sales</span></a></li>
+                <li><a href=><i class="fa fa-money"></i> <span>Create New Reseller</span></a></li>
+                <li class="header" style="background-color: #17a2b8;">MANAGE</li>
+                <li><a href=""><i class="fa fa-users"></i> <span>Users</span></a></li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-barcode"></i>
+                        <span>Products</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href=""><i class="fa fa-circle-o"></i> Product List</a></li>
+                        <li><a href=""><i class="fa fa-circle-o"></i> Category</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+      <div class="container mt-5">
+        <div class="container mt-5" style="margin-top: 60px;padding-left: 55px;padding-right: 0px;">
+          <h1>Product List</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item">Products</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Product List
+              </li>
+            </ol>
+          </nav>
+  
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <a href="#addnew" class="btn btn-primary" data-toggle="modal"
+                ><i class="fa fa-plus"></i> New</a
+              >
+            </div>
+            <div class="col-md-6">
+              <select class="form-control" id="select_category">
+                <option value="0">ALL</option>
+                <option value="1">Processor</option>
+                <option value="2">RAM</option>
+              </select>
+            </div>
+          </div>
+  
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Photo</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Views Today</th>
+                <th>Tools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Asus Prime Motherboard</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\3.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 45 000.00</td>
+                <td>20</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Rock Strix Motherboard</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\1.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 39 000.00</td>
+                <td>6</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Toshiba Harddisk 500GB</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\1to.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 14 000.00</td>
+                <td>8</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Asus Prime Motherboard</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\3.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 45 000.00</td>
+                <td>20</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Rock Strix Motherboard</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\1.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 39 000.00</td>
+                <td>6</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Toshiba Harddisk 500GB</td>
+                <td>
+                  <img
+                  src="products\amd\gamemax\motherboard\1to.png"
+                    alt="Sample"
+                    height="30px"
+                    width="30px"
+                  />
+                </td>
+                <td>
+                  <button class="btn btn-info btn-sm">View</button>
+                </td>
+                <td>Rs 14 000.00</td>
+                <td>8</td>
+                <td>
+                  <button class="btn btn-success btn-sm">Edit</button>
+                  <button class="btn btn-danger btn-sm">Delete</button>
+                </td>
+              </tr>
+   
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const userNameElement = document.getElementById("userName");
+  
+          userNameElement.addEventListener("click", function () {
+            const isConfirmed = confirm("Are you sure you want to sign out?");
+            if (isConfirmed) {
+              window.location.href = "login.html";
+            }
+          });
+        });
+      </script>
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
